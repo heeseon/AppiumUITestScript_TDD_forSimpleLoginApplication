@@ -22,7 +22,7 @@ public class AppiumDemo {
     @BeforeTest
     public void setUp() throws Exception {
         File appDir = new File("/Users/hwangheeseon/Documents/workspace3/AppiumDemo/apps"); // 테스트하고자 하는 애플리케이션 full path
-        File app = new File(appDir, "app-debug.apk"); // 애플리케이션 이름 
+        File app = new File(appDir, "SimpleLoginTestForAndroid.apk"); // 애플리케이션 이름 
         
         DesiredCapabilities capabilities = new DesiredCapabilities(); //애피움 서버와의 세션 생성을 위한 설정 값 
         capabilities.setCapability("deviceName","Android");
